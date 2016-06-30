@@ -3,9 +3,9 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Biblioteca;
+using BiblioPeka.DAL;
 
-namespace Biblioteca.DAL
+namespace BiblioPeka.DAL
 {
     class Singleton
     {

@@ -3,9 +3,10 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
-using Biblioteca.Model;
+using BiblioPeka.Model;
+using System.Runtime.Remoting.Contexts;
 
-namespace Biblioteca.DAL
+namespace BiblioPeka.DAL
 {
     class PessoaDAO
     {
@@ -67,7 +68,7 @@ namespace Biblioteca.DAL
 
         public static Pessoa VerificarPessoaPorCPF(Pessoa p)
         {
-            return ctx.Pessoas.FirstOrDefault(x => x.Cpf.Equals(p.Cpf));
+            return ctx.Pessoas.FirstOrDefault(x => x.CPF.Equals(p.CPF));
         }
     }
 }

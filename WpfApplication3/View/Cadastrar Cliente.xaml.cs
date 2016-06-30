@@ -1,4 +1,6 @@
-﻿using System;
+﻿using BiblioPeka.DAL;
+using BiblioPeka.Model;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -11,29 +13,27 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
-using Biblioteca.Model;
-using Biblioteca.DAL;
 
-namespace Biblioteca.View
+namespace WpfApplication3.View
 {
     /// <summary>
-    /// Interaction logic for Biblioteca.xaml
+    /// Interaction logic for Cadastrar_Cliente.xaml
     /// </summary>
-    public partial class Biblioteca : Window
+    public partial class Cadastrar_Cliente : Window
     {
+
         private Pessoa p = new Pessoa();
 
-        public Biblioteca()
+        public Cadastrar_Cliente()
         {
             InitializeComponent();
         }
-
 
         private void btn_Incluir_Click(object sender, RoutedEventArgs e)
         {
             p = new Pessoa();
             p.Nome = txt_Nome.Text;
-            p.Cpf = txt_CPF.Text;
+            p.CPF = txt_CPF.Text;
 
             if (PessoaDAO.AlterarPessoa(p))
             {
@@ -48,31 +48,6 @@ namespace Biblioteca.View
 
             txt_Nome.Text = "";
             txt_Nome.Focus();
-        }
-
-        private void btn_Alterar_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btn_Excluir_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btn_Cancelar_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void btn_Buscar_Click(object sender, RoutedEventArgs e)
-        {
-
-        }
-
-        private void txt_CPF_TextChanged(object sender, TextChangedEventArgs e)
-        {
-
         }
     }
 }
