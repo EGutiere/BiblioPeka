@@ -1,4 +1,4 @@
-namespace WpfApplication3.Migrations
+namespace CRUDCliente.Migrations
 {
     using System;
     using System.Data.Entity;

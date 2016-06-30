@@ -72,13 +72,12 @@
     <Compile Include="View\Cadastrar Cliente.xaml.cs">
       <DependentUpon>Cadastrar Cliente.xaml</DependentUpon>
     </Compile>
+    <Compile Include="View\Main.xaml.cs">
+      <DependentUpon>Main.xaml</DependentUpon>
+    </Compile>
     <Page Include="View\Cadastrar Cliente.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
-    </Page>
-    <Page Include="View\MainWindow.xaml">
-      <Generator>MSBuild:Compile</Generator>
-      <SubType>Designer</SubType>
     </Page>
     <Compile Include="App.xaml.cs">
       <DependentUpon>App.xaml</DependentUpon>
@@ -90,10 +89,10 @@
     <Compile Include="DAL\Singleton.cs" />
     <Compile Include="Model\Livro.cs" />
     <Compile Include="Model\Pessoa.cs" />
-    <Compile Include="View\MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
-      <SubType>Code</SubType>
-    </Compile>
+    <Page Include="View\Main.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Properties\AssemblyInfo.cs">

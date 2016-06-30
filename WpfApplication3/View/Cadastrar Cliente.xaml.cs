@@ -14,7 +14,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
 
-namespace WpfApplication3.View
+namespace CRUDCliente.View
 {
     /// <summary>
     /// Interaction logic for Cadastrar_Cliente.xaml
