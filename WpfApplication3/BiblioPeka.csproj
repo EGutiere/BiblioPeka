@@ -64,6 +64,11 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
+    <Compile Include="Migrations\201606302058199_PPeka.cs" />
+    <Compile Include="Migrations\201606302058199_PPeka.Designer.cs">
+      <DependentUpon>201606302058199_PPeka.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\Configuration.cs" />
     <Compile Include="View\Cadastrar Cliente.xaml.cs">
       <DependentUpon>Cadastrar Cliente.xaml</DependentUpon>
     </Compile>
@@ -104,6 +109,9 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <EmbeddedResource Include="Migrations\201606302058199_PPeka.resx">
+      <DependentUpon>201606302058199_PPeka.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
